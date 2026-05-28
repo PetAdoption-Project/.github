@@ -30,7 +30,7 @@
    - Ask the user to review the changes and confirm they have done a self-review of the diff
    - Only proceed after the user explicitly confirms (e.g. "go ahead" / "looks good" / "approved")
 
-8. **Code review before merge**: Before merging any PR, run `/review` in Claude Code. Address all findings before merging.
+8. **Code review before push**: Before pushing, run `/review` in Claude Code. Address all findings, then push and create PR.
 
 9. **PR creation**: After commit and push:
    - If a PR already exists for the current branch — just push, PR updates automatically, no new PR needed
