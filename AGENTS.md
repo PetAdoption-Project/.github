@@ -27,7 +27,7 @@
 
 7. **Pre-commit confirmation required**: When the user says they are ready to commit, before running `git commit`:
    - List all files that will be included in the commit
-   - Ask the user to review the changes
+   - Ask the user to review the changes and confirm they have done a self-review of the diff
    - Only proceed after the user explicitly confirms (e.g. "go ahead" / "looks good" / "approved")
 
-8. **PR self-review**: Before opening a PR, the user must review their own diff.
+8. **PR creation**: After commit and push, always create a PR automatically. Ask which base branch to target — default is `master`. User either confirms or specifies a different branch (e.g. for hotfixes or cherry-picks).
