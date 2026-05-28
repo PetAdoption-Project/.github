@@ -30,4 +30,6 @@
    - Ask the user to review the changes and confirm they have done a self-review of the diff
    - Only proceed after the user explicitly confirms (e.g. "go ahead" / "looks good" / "approved")
 
-8. **PR creation**: After commit and push, always create a PR automatically. Ask which base branch to target — default is `master`. User either confirms or specifies a different branch (e.g. for hotfixes or cherry-picks).
+8. **PR creation**: After commit and push:
+   - If a PR already exists for the current branch — just push, PR updates automatically, no new PR needed
+   - If no PR exists — ask which base branch to target (default `master`), user confirms or specifies a different branch (e.g. for hotfixes or cherry-picks), then create PR
